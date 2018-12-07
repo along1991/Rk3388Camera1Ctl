@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.ctl.rk3399.view.CameraView
+        android:id="@+id/preview_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/iv_takephoto"
+        android:layout_width="60dp"
+        android:layout_marginRight="40dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/btn_takephoto" />
+
+    <ImageView
+        android:layout_toRightOf="@+id/iv_takephoto"
+        android:layout_alignTop="@+id/iv_takephoto"
+        android:id="@+id/iv_photo"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+</RelativeLayout>
